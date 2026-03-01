@@ -1,3 +1,4 @@
+
 /* DEFAULT SPACING */
 * {margin:0;
     padding: 0;
@@ -11,6 +12,9 @@ body{padding:20px;
 /* MAIN HEADING */
 h1 {margin-bottom: 20px;
     text-align: center;}
+
+/* OUTER BOXES */
+section{border: 2px solid #333; background-color: white; margin-bottom: 20px;}
 
 /* IN BOXES */
 .box {display: flex;
@@ -33,11 +37,9 @@ h1 {margin-bottom: 20px;
 .three-unequal-rows .wide {flex: 2;}
 
 /* FOUR EQUAL ROWS */
-.four-equal-rows {display: flex; gap: 12px; padding: 12px;}
+.four-equal-rows {display: flex; gap: 12px; padding: 12px; flex-wrap: wrap;}
 .four-equal-rows .box {flex: 1; background-color: #f0d9ff;}
-
-    /* FOOTER */
-.footer-box {display: flex; background-color: #ffd6cc;
-margin-top: 12px; border: 2px solid #333; height: 50px;
+.footer-box {display: flex; flex-basis: 100%; background-color: #ffd6cc;
+border: 2px solid #333; height: 50px;
 align-items: center; justify-content: center;}
 
